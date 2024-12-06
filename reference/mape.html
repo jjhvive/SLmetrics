@@ -9,7 +9,7 @@ the observed and predicted &amp;lt;numeric&amp;gt; vectors. If w is not NULL the
 
     <a class="navbar-brand me-2" href="../index.html">SLmetrics</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1-0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1-1</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,7 +50,7 @@ the observed and predicted &lt;<a href="https://rdrr.io/r/base/numeric.html" cla
     <div class="section level2">
     <h2 id="ref-usage">Usage<a class="anchor" aria-label="anchor" href="#ref-usage"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="co"># S3 method for class 'numeric'</span></span>
-<span><span class="fu">mape</span><span class="op">(</span><span class="va">actual</span>, <span class="va">predicted</span>, w <span class="op">=</span> <span class="cn">NULL</span>, <span class="va">...</span><span class="op">)</span></span>
+<span><span class="fu">mape</span><span class="op">(</span><span class="va">actual</span>, <span class="va">predicted</span>, w <span class="op">=</span> <span class="cn">NULL</span>, na.rm <span class="op">=</span> <span class="cn">FALSE</span>, <span class="va">...</span><span class="op">)</span></span>
 <span></span>
 <span><span class="fu">mape</span><span class="op">(</span><span class="va">...</span><span class="op">)</span></span></code></pre></div>
     </div>
@@ -69,6 +69,10 @@ the observed and predicted &lt;<a href="https://rdrr.io/r/base/numeric.html" cla
 
 <dt id="arg-w">w<a class="anchor" aria-label="anchor" href="#arg-w"></a></dt>
 <dd><p>A &lt;<a href="https://rdrr.io/r/base/numeric.html" class="external-link">numeric</a>&gt;-vector of <a href="https://rdrr.io/r/base/length.html" class="external-link">length</a> \(n\). The weight assigned to each observation in the data. See <code><a href="https://rdrr.io/r/stats/weighted.mean.html" class="external-link">stats::weighted.mean()</a></code> for more details.</p></dd>
+
+
+<dt id="arg-na-rm">na.rm<a class="anchor" aria-label="anchor" href="#arg-na-rm"></a></dt>
+<dd><p>A &lt;<a href="https://rdrr.io/r/base/logical.html" class="external-link">logical</a>&gt;-value of <a href="https://rdrr.io/r/base/length.html" class="external-link">length</a> \(1\). <a href="https://rdrr.io/r/base/logical.html" class="external-link">FALSE</a> by default. If <a href="https://rdrr.io/r/base/logical.html" class="external-link">TRUE</a> NA values will be removed from the computation.</p></dd>
 
 
 <dt id="arg--">...<a class="anchor" aria-label="anchor" href="#arg--"></a></dt>
